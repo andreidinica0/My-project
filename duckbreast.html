@@ -3,8 +3,13 @@
 
 <head>
     <title>Pierre, the onion</title>
-    <meta name=viewport content='width=700'>
+   <meta name=viewport content='user-scalable=no'>
     <style>
+    .body{background-image: url('https://cookinginsens.files.wordpress.com/2012/01/img_2266b.jpg ');
+    background-size: 2000px 1500px;}
+    img {
+  max-width: 100%
+}
         input[type=text] {
             float: right;
             width: 200px;
@@ -23,14 +28,16 @@
         #searchbar {
             float: right;
             padding: 20px 30px;
+            display:inline;
         }
         
         .rating {
             unicode-bidi: bidi-override;
             direction: rtl;
-            padding: 430px 300px 0px 0px;
+            padding: 460px 300px 0px 170px;
             float: left;
             font-size: 300%;
+            color: #009C7B;
         }
         
         .rating > span {
@@ -48,27 +55,39 @@
         
         .header {
             width: 100%;
-            height: 500px;
+            height: 80px;
             padding: 0p;
-            background-color: #009C7B;
-            background-size: 2000px 500px;
-            background-image: url("https://cookinginsens.files.wordpress.com/2012/01/img_2266b.jpg");
+            float: left;
+          
+           background-color:  #009C7B;
         }
         
         #duck {
-            font-size: 90px;
+            font-size: 30px;
         }
         
         .ingredients {
             padding: 0px 0px 0px 100px;
             float: left;
-            font-size: 100%
+            font-size: 100%;
+             color:white;
+
+
+background-color: rgba(0,0,0,0.5);
+              z-index:0;
+               opacity:0.5;
         }
         
         #time {
             padding: 0px 0px 0px 200px;
             color: #800020;
-            font-size: 130%;
+            font-size: 180%;
+           
+
+
+background-color: rgba(0,0,0,0.5);
+              z-index:0;
+               opacity:0.5;
         }
         
         #minutes {
@@ -76,27 +95,45 @@
             font-size: 300%;
             display: inline;
             float: left;
+             color:white;
+
+
+background-color: rgba(0,0,0,0.5);
+              z-index:0;
+               opacity:0.5;
         }
         
         .minute {
-            font-size: 100%;
+            font-size: 150%;
+             color:white;
+
+
+background-color: rgba(0,0,0,0.5);
+              z-index:0;
+               opacity:0.5;
         }
         
         p {
-            font-size: 50%;
+            font-size: 100%;
             display: inline;
         }
         
         .instructions {
             float: right;
             padding: 80px 0px 0px 0px;
-            font-size: 100%;
+            font-size: 150%;
+            color:white;
+
+
+background-color: rgba(0,0,0,0.5);
+              z-index:0;
+               opacity:0.5;
         }
         
         .comment {
             padding: 40px 200px 0px 200px;
             float: left;
-            font-size: 100%;
+            font-size: 150%;
         }
         
         .image {
@@ -104,16 +141,20 @@
             padding: 0px 800px 00px 0px
         }
         
-        .body {
-            background-image: url("https://cookinginsens.files.wordpss.com/2012/01/img_2266b.jpg");
-            background-size: 2000px 1000px;
-        }
+      
+        #textc{font-size: 300%;
+        padding: 200px 30px 0px 200px;}
+        #coment{padding:50px 100px }
+        #Pierre{display:inline;
+        float:left;}
     </style>
 
 
 </head>
 
 <body class="body">
+    <div id="Pierre"><h1>Pierre, the onion present to you:</h1>
+        </div>
     <div id="searchbar">
         <input type="text" id="search" placeholder="Search a recipe..." />
     </div>
@@ -126,12 +167,13 @@
 
         </div>
     </header>
+     <h1 id="textc">Comment me!</h1>
     <div class="comment">
-        <h1>Comment me!</h1>
+       
         <form method="post">
-            Name:<input 'text' name="name" id="name" /><br> <br>
-            E-mail:
-            <input 'text' name="e-mail" id="e-mail" /><br> <br>Comment:
+            Name:<br><input 'text' name="name" id="name" /><br> 
+            E-mail:<br>
+            <input 'text' name="e-mail" id="e-mail" /><br>Comment:
             <br>
             <textarea name="coment" id="coment" placeholder="We don't use php..."></textarea><br>
 
