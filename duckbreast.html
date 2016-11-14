@@ -2,14 +2,19 @@
 <html>
 
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Pierre, the onion</title>
-   <meta name=viewport content='user-scalable=no'>
+    <meta name=viewport content='user-scalable=no'>
     <style>
-    .body{background-image: url('https://cookinginsens.files.wordpress.com/2012/01/img_2266b.jpg ');
-    background-size: 2000px 1500px;}
-    img {
-  max-width: 100%
-}
+        .body {
+            background-image: url('https://cookinginsens.files.wordpress.com/2012/01/img_2266b.jpg ');
+            background-size: 2000px 1500px;
+        }
+        
+        img {
+            max-width: 100%
+        }
+        
         input[type=text] {
             float: right;
             width: 200px;
@@ -28,7 +33,7 @@
         #searchbar {
             float: right;
             padding: 20px 30px;
-            display:inline;
+            display: inline;
         }
         
         .rating {
@@ -58,8 +63,7 @@
             height: 80px;
             padding: 0p;
             float: left;
-          
-           background-color:  #009C7B;
+            background-color: #009C7B;
         }
         
         #duck {
@@ -70,24 +74,19 @@
             padding: 0px 0px 0px 100px;
             float: left;
             font-size: 100%;
-             color:white;
-
-
-background-color: rgba(0,0,0,0.5);
-              z-index:0;
-               opacity:0.5;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+            opacity: 0.5;
         }
         
         #time {
             padding: 0px 0px 0px 200px;
             color: #800020;
             font-size: 180%;
-           
-
-
-background-color: rgba(0,0,0,0.5);
-              z-index:0;
-               opacity:0.5;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+            opacity: 0.5;
         }
         
         #minutes {
@@ -95,22 +94,18 @@ background-color: rgba(0,0,0,0.5);
             font-size: 300%;
             display: inline;
             float: left;
-             color:white;
-
-
-background-color: rgba(0,0,0,0.5);
-              z-index:0;
-               opacity:0.5;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+            opacity: 0.5;
         }
         
         .minute {
             font-size: 150%;
-             color:white;
-
-
-background-color: rgba(0,0,0,0.5);
-              z-index:0;
-               opacity:0.5;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+            opacity: 0.5;
         }
         
         p {
@@ -122,12 +117,10 @@ background-color: rgba(0,0,0,0.5);
             float: right;
             padding: 80px 0px 0px 0px;
             font-size: 150%;
-            color:white;
-
-
-background-color: rgba(0,0,0,0.5);
-              z-index:0;
-               opacity:0.5;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+            opacity: 0.5;
         }
         
         .comment {
@@ -141,20 +134,28 @@ background-color: rgba(0,0,0,0.5);
             padding: 0px 800px 00px 0px
         }
         
-      
-        #textc{font-size: 300%;
-        padding: 200px 30px 0px 200px;}
-        #coment{padding:50px 100px }
-        #Pierre{display:inline;
-        float:left;}
+        #textc {
+            font-size: 300%;
+            padding: 200px 30px 0px 200px;
+        }
+        
+        #coment {
+            padding: 50px 100px
+        }
+        
+        #Pierre {
+            display: inline;
+            float: left;
+        }
     </style>
 
 
 </head>
 
 <body class="body">
-    <div id="Pierre"><h1>Pierre, the onion present to you:</h1>
-        </div>
+    <div id="Pierre">
+        <h1>Pierre, the onion present to you:</h1>
+    </div>
     <div id="searchbar">
         <input type="text" id="search" placeholder="Search a recipe..." />
     </div>
@@ -167,12 +168,12 @@ background-color: rgba(0,0,0,0.5);
 
         </div>
     </header>
-     <h1 id="textc">Comment me!</h1>
+    <h1 id="textc">Comment me!</h1>
     <div class="comment">
-       
+
         <form method="post">
-            Name:<br><input 'text' name="name" id="name" /><br> 
-            E-mail:<br>
+            Name:<br><input 'text' name="name" id="name" /><br> E-mail:
+            <br>
             <input 'text' name="e-mail" id="e-mail" /><br>Comment:
             <br>
             <textarea name="coment" id="coment" placeholder="We don't use php..."></textarea><br>
