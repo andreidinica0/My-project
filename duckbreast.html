@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        input[type=text] {
+            float: right;
+            width: 200px;
+            box-sizing: border-box;
+            border: 2px solid #cc2;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url('');
+            background-repeat: no-repeat;
+            padding: 12px 30px 10px 10px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+        }
+        
+        #searchbar {
+            float: right;
+            padding: 20px 30px;
+        }
+        
+        .rating {
+            unicode-bidi: bidi-override;
+            direction: rtl;
+            padding: 430px 300px 0px 0px;
+            float: left;
+            font-size: 300%;
+        }
+        
+        .rating > span {
+            display: inline-block;
+            position: relative;
+            width: 1.1em;
+        }
+        
+        .rating > span:hover:before,
+        .rating > span:hover ~ span:before {
+            content: "\2605";
+            position: absolute;
+            color: yellow;
+        }
+        
+        .header {
+            width: 100%;
+            height: 500px;
+            padding: 0p;
+            background-color: #009C7B;
+            background-size: 2000px 500px;
+            background-image: url("https://cookinginsens.files.wordpress.com/2012/01/img_2266b.jpg");
+        }
+        
+        #duck {
+            font-size: 90px;
+        }
+        
+        .ingredients {
+            padding: 0px 0px 0px 100px;
+            float: left;
+            font-size: 100%
+        }
+        
+        #time {
+            padding: 0px 0px 0px 200px;
+            color: #800020;
+            font-size: 130%;
+        }
+        
+        #minutes {
+            padding: 0px 0px 0 200px;
+            font-size: 300%;
+            display: inline;
+            float: left;
+        }
+        
+        .minute {
+            font-size: 100%;
+        }
+        
+        p {
+            font-size: 50%;
+            display: inline;
+        }
+        
+        .instructions {
+            float: right;
+            padding: 80px 0px 0px 0px;
+            font-size: 100%;
+        }
+        
+        .comment {
+            padding: 40px 200px 0px 200px;
+            float: left;
+            font-size: 100%;
+        }
+        
+        .image {
+            float: right;
+            padding: 0px 800px 00px 0px
+        }
+        
+        .body {
+            background-image: url("https://cookinginsens.files.wordpss.com/2012/01/img_2266b.jpg");
+            background-size: 2000px 1000px;
+        }
+    </style>
+
+
+</head>
+
+<body class="body">
+    <div id="searchbar">
+        <input type="text" id="search" placeholder="Search a recipe..." />
+    </div>
+    <header class="header">
+        <div>
+
+            <h1 id="duck">Duck breast
+                <h1>
+                    <div class="rating"><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></div>
+
+        </div>
+    </header>
+    <div class="comment">
+        <h1>Comment me!</h1>
+        <form method="post">
+            Name:<input 'text' name="name" id="name" /><br> <br>
+            E-mail:
+            <input 'text' name="e-mail" id="e-mail" /><br> <br>Comment:
+            <br>
+            <textarea name="coment" id="coment" placeholder="We don't use php..."></textarea><br>
+
+            <input type='hidden' name='articleid' id='articleid' value='<? echo $_GET["id"]; ?>' />
+
+            <input type='submit' value='Submit' />
+
+        </form>
+
+    </div>
+    </header>
+    <table class="table">
+
+        <tr>
+            <td>
+                <h3 id="time">Total time:</h3>
+                <h1 id="minutes">20
+                    <p>min</p>
+                </h1><br><br><br><br><br><br><br><br><br></td>
+            <td>
+                <h3 class="minute">PREP
+                    <p>5 MINS</p>
+                </h3><br>
+                <h3 class="minute">COOK
+                    <p>15 MINS</p>
+                </h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="ingredients">
+                    <h1>INGREDIENTS:</h1>
+                    <ul>
+                        <ol>4 duck breast halves</ol>
+                        <br>
+                        <ol>5 tablespoons balsamic vinegar</ol><br>
+                        <ol>salt and pepper, to taste</ol><br>
+                        <ol>extra balsamic vinegar, for drizzling (optional)</ol><br>
+
+                    </ul>
+                </div>
+            </td>
+
+            <td>
+                <div class="instructions">
+
+                    <h1>Instructions:</h1>
+                    <ul>
+                        <ol> Using a sharp knife, score the duck skin (fat) with </ol>
+                        <ol>diagonal parallel slashes 1/2 inch apart to make a </ol>
+                        <ol>diamond pattern, being careful not to pierce </ol>
+                        <ol>through to the flesh.</ol>
+                        <br>
+                        <ol>Pour the balsamic vinegar into a shallow dish just </ol>
+                        <ol>wide enough to fit the breasts in one layer.</ol>
+                        <br>
+                        <ol>Add the duck, flesh (not fat) side down; cover and </ol>
+                        <ol>cover and leave to marinate for 20 minutes at room </ol>
+                        <ol>temperature (can be marinated up to 2 hours </ol>
+                        <ol>refrigerated but remove for last twenty minutes at </ol>
+                        <ol>room temperature).</ol>
+                        <br>
+                        <ol>...</ol>
+                        <br>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+
+
+</body>
+
+</html>
